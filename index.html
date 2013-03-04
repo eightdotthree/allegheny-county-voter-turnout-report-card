@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html>
+	<head>
+
+		<title>Allegheny County Voter Turnout Report Card</title>
+
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+		<!-- Bootstrap -->
+		<link href="css/bootstrap.min.css" rel="stylesheet" media="screen">
+		<link href="css/bootstrap-responsive.min.css" rel="stylesheet">
+
+		<style type="text/css">
+
+			.container-fluid {
+				max-width: 960px;
+				margin: 0 auto;
+			}
+
+			.navbar .nav,
+			.navbar .nav > li {
+			    float:none;
+			    display:inline-block;
+			    *display:inline; /* ie7 fix */
+			    *zoom:1; /* hasLayout ie7 trigger */
+			    vertical-align: top;
+			}
+			.navbar-inner {
+			    text-align: center;
+			}
+
+			/*
+			.voterResultsDistrict {
+				width: 65%
+			}
+			.voterResultsRegisteredVoters, .voterResultsVotesCast {
+				width: 13%;
+			}
+			.voterResultsGrade {
+				width: 9%;
+			}
+			*/
+
+			th.voterResultsRegisteredVoters,
+			th.voterResultsVotesCast,
+			th.voterResultsGrade,
+			td.right {
+				text-align: right;
+			}
+
+		</style>
+
+	</head>
+	<body>
+
+		<div class="hero-unit">
+			<h1>Allegheny County Voter Turnout Report Card</h1>
+			<p>Using data from <a href="http://www.opendatapgh" title="Open Data Pittsburgh">Open Data Pittsburgh</a> I grade Allegheny County's voter turnout.</p>
+		</div>
+
+		<div class="container-fluid">
+			<div class="navbar">
+  				<div class="navbar-inner">
+    				<ul id="yearNav" class="nav">
+      					<li><a href="#voterResults2012" data-rendered="false" data-toggle="tab" data-year="2012">2012</a></li>
+      					<li><a href="#voterResults2010" data-rendered="false" data-toggle="tab" data-year="2010">2010</a></li>
+      					<li><a href="#voterResults2008" data-rendered="false" data-toggle="tab" data-year="2008">2008</a></li>
+    				</ul>
+  				</div>
+			</div>
+		</div>
+
+		<section class="container-fluid tab-content">
+
+			<div id="voterResults2012" class="row-fluid tab-pane">
+
+				<table class="table table-striped table-hover voterResults">
+
+					<tr>
+						<th class="voterResultsDistrict">district</th>
+						<th class="voterResultsRegisteredVoters">registered voters</th>
+						<th class="voterResultsVotesCast">votes cast</th>
+						<th class="voterResultsGrade">grade</th>
+					</tr>
+
+				</table>
+
+			</div>
+
+			<div id="voterResults2010" class="row-fluid tab-pane">
+
+				<table class="table table-striped table-hover voterResults">
+
+					<tr>
+						<th class="voterResultsDistrict">district</th>
+						<th class="voterResultsRegisteredVoters">registered voters</th>
+						<th class="voterResultsVotesCast">votes cast</th>
+						<th class="voterResultsGrade">grade</th>
+					</tr>
+
+				</table>
+
+			</div>
+
+			<div id="voterResults2008" class="row-fluid tab-pane">
+
+				<table class="table table-striped table-hover voterResults">
+
+					<tr>
+						<th class="voterResultsDistrict">district</th>
+						<th class="voterResultsRegisteredVoters">registered voters</th>
+						<th class="voterResultsVotesCast">votes cast</th>
+						<th class="voterResultsGrade">grade</th>
+					</tr>
+
+				</table>
+				
+			</div>
+
+		</section>
+
+
+		<script src="http://code.jquery.com/jquery.js"></script>
+		<script src="./js/bootstrap.min.js"></script>
+		<script src="./js/pghVotingReportCard.js"></script>
+
+	</body>
+</html>
